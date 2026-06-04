@@ -20,6 +20,9 @@ importers:
       vue:
         specifier: ^3.5.13
         version: 3.5.35(typescript@5.6.3)
+      vue-cal:
+        specifier: ^4.10.2
+        version: 4.10.2(vue@3.5.35(typescript@5.6.3))
       vue-router:
         specifier: ^5.1.0
         version: 5.1.0(@vue/compiler-sfc@3.5.35)(vite@6.4.2(yaml@2.9.0))(vue@3.5.35(typescript@5.6.3))
@@ -776,6 +779,11 @@ packages:
   vscode-uri@3.1.0:
     resolution: {integrity: sha512-/BpdSx+yCQGnCvecbyXdxHDkuk55/G3xwnC0GqY4gmQ3j+A+g8kzzgB4Nk/SINjqn6+waqw3EgbVF2QKExkRxQ==}
 
+  vue-cal@4.10.2:
+    resolution: {integrity: sha512-VHaoqI2DLGlwo4BGoUKF97PqKdxGFHCilj2co40zraQXucolALDaYNdpSfdP1kO3f+uznuqbEFH3n/SF5fHPpQ==}
+    peerDependencies:
+      vue: ^3.2.0
+
   vue-router@5.1.0:
     resolution: {integrity: sha512-HAbiLzLEHQwxPgvsbOJDAwtavszEgLwri6XfyrsPECIFez8+59xc9LofWVdc/HEaSRT822lJ8H9Ns38VVond5g==}
     peerDependencies:
@@ -1412,6 +1420,10 @@ snapshots:
       yaml: 2.9.0
 
   vscode-uri@3.1.0: {}
+
+  vue-cal@4.10.2(vue@3.5.35(typescript@5.6.3)):
+    dependencies:
+      vue: 3.5.35(typescript@5.6.3)
 
   vue-router@5.1.0(@vue/compiler-sfc@3.5.35)(vite@6.4.2(yaml@2.9.0))(vue@3.5.35(typescript@5.6.3)):
     dependencies:
