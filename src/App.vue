@@ -1,13 +1,11 @@
-<script setup lang="ts">
-import dashboard from "./components/dashboard.vue";
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <main class="container">
-    <h1>Mein Pomodoro Dashboard</h1>
-    <div>Hier kommt der Wochen Kalender rein.</div>
-    <dashboard />
-  </main>
+  <nav class="nav">
+    <RouterLink to="/">Go to Dashboard</RouterLink>
+    <RouterLink to="/timer">Start Timer</RouterLink>
+  </nav>
+  <RouterView />
 </template>
 
 <style scoped>
@@ -34,5 +32,9 @@ import dashboard from "./components/dashboard.vue";
   flex-direction: column;
   justify-content: center;
   text-align: center;
+}
+.nav {
+  display: flex;
+  gap: 10px;
 }
 </style>

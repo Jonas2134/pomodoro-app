@@ -8,6 +8,7 @@ const handleCellClick = (date: any) => {
 </script>
 
 <template>
+  <h1>Mein Dashboard</h1>
   <vue-cal
     active-view="week"
     :disable-views="['years', 'year', 'month', 'day']"
