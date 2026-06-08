@@ -1,18 +1,35 @@
 <script setup lang="ts">
-import Dashboard_calander from "./Dashboard_calander.vue";
+import DashboardCalander from "./Dashboard-calander.vue";
+import DashboardActivities from "./Dashboard-activities.vue";
 </script>
 
 <template>
-    <h1>Mein Dashboard</h1>
-    <dashboard_calander />
+    <div class="dashboard">
+        <h1 class="dashboard__title">Mein Dashboard</h1>
+        <section class="dashboard__section">
+            <dashboard-calander />
+            <dashboard-activities />
+        </section>
+    </div>
 </template>
 
-<style scoped>
-#app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+<style lang="css" scoped>
+.dashboard {
+    max-width: 1200px;
+    padding: 18px;
+    margin: 0 auto;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+.dashboard__title {
     text-align: center;
-    color: #2c3e50;
+    text-decoration: underline;
+}
+.dashboard__section {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
 }
 </style>

@@ -12,7 +12,7 @@ const handleCellClick = (date: any) => {
         active-view="week"
         :disable-views="['years', 'year', 'month', 'day']"
         :locale="'de'"
-        :time="false"
+        :time="true"
         @cell-click="handleCellClick"
         class="vuecal--square dashboard-cal"
     />
@@ -20,7 +20,8 @@ const handleCellClick = (date: any) => {
 
 <style lang="css" scoped>
 .dashboard-cal {
-    height: 250px;
+    height: 450px;
+    width: 100%;
     border: 1px solid #333;
     border-radius: 8px;
     overflow: hidden;
