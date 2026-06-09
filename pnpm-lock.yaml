@@ -26,6 +26,9 @@ importers:
       vue-router:
         specifier: ^5.1.0
         version: 5.1.0(@vue/compiler-sfc@3.5.35)(vite@6.4.2(yaml@2.9.0))(vue@3.5.35(typescript@5.6.3))
+      vue-timer-hook:
+        specifier: ^1.0.86
+        version: 1.0.86(vue@3.5.35(typescript@5.6.3))
       vue3-calendar-heatmap:
         specifier: ^2.0.5
         version: 2.0.5(tippy.js@6.3.7)(vue@3.5.35(typescript@5.6.3))
@@ -811,6 +814,11 @@ packages:
       vite:
         optional: true
 
+  vue-timer-hook@1.0.86:
+    resolution: {integrity: sha512-Ps+lQSYQmGVaOs95YYYfbPqZDPyEqxBeap6jZdxkAfOy+vYHfgwaZ06goR3AifOBiqiZqqcw3MUV1GSlGoFTYg==}
+    peerDependencies:
+      vue: ^3.2.0
+
   vue-tsc@2.2.12:
     resolution: {integrity: sha512-P7OP77b2h/Pmk+lZdJ0YWs+5tJ6J2+uOQPo7tlBnY44QqQSPYvS0qVT4wqDJgwrZaLe47etJLLQRFia71GYITw==}
     hasBin: true
@@ -1470,6 +1478,10 @@ snapshots:
     optionalDependencies:
       '@vue/compiler-sfc': 3.5.35
       vite: 6.4.2(yaml@2.9.0)
+
+  vue-timer-hook@1.0.86(vue@3.5.35(typescript@5.6.3)):
+    dependencies:
+      vue: 3.5.35(typescript@5.6.3)
 
   vue-tsc@2.2.12(typescript@5.6.3):
     dependencies:
