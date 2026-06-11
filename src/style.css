@@ -8,3 +8,25 @@ h1 {
     margin: 0;
     font-size: 3em;
 }
+
+p {
+    margin: 0;
+}
+
+menu {
+    margin: 0;
+}
+
+.base-layout {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.headline-center {
+    text-align: center;
+    text-decoration: underline;
+}
