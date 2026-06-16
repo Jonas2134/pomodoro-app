@@ -1,32 +1,42 @@
+html,
 body {
-    margin: 0;
-    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-    font-size: 16px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+#app {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 190px 1fr;
 }
 
 h1 {
-    margin: 0;
-    font-size: 3em;
+  margin: 0;
+  font-size: 3em;
 }
 
 p {
-    margin: 0;
+  margin: 0;
 }
 
 menu {
-    margin: 0;
+  margin: 0;
 }
 
 .base-layout {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 18px;
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
 }
 
 .headline-center {
-    text-align: center;
-    text-decoration: underline;
+  text-align: center;
+  text-decoration: underline;
 }
