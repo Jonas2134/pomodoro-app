@@ -21,6 +21,7 @@
   justify-content: space-between;
   border-right: 1px solid;
   padding: 18px 0;
+  background-color: var(--aside-bg-color);
 }
 .app-nav {
   display: flex;

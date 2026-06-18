@@ -16,12 +16,20 @@ const pomodoroHistory = ref([
 </script>
 
 <template>
-    <calendar-heatmap
-        :values="pomodoroHistory"
-        :end-date="todayFormatted"
-        :round="2"
-        :range-color="customColors"
-    />
+    <div class="dashboard-card heatmap">
+        <calendar-heatmap
+            :values="pomodoroHistory"
+            :end-date="todayFormatted"
+            :round="2"
+            :range-color="customColors"
+        />
+    </div>
 </template>
 
-<style lang="css" scoped></style>
+<style lang="css" scoped>
+.heatmap {
+    padding: 18px;
+    grid-column: 1 / 4;
+    grid-row: 3;
+}
+</style>

@@ -1,42 +1,48 @@
+:root {
+    color-scheme: light dark;
+
+    --base-bg-color: light-dark(#f2f0ec, #1e1c24);
+    --aside-bg-color: light-dark(#eae7e1, #1a1825);
+    --card-bg-color: light-dark(#faf8f5, #252330);
+
+    --base-border-color: light-dark(#e6e5e2, #363440);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html,
 body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
+    width: 100%;
+    min-width: 100dvw;
+    height: 100%;
+    max-height: 100dvh;
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    background-color: var(--base-bg-color);
 }
 
 #app {
-  height: 100%;
-  display: grid;
-  grid-template-columns: 190px 1fr;
-}
-
-h1 {
-  margin: 0;
-  font-size: 3em;
-}
-
-p {
-  margin: 0;
-}
-
-menu {
-  margin: 0;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 190px 1fr;
 }
 
 .base-layout {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 18px;
-  display: flex;
-  gap: 20px;
-  flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
 }
 
-.headline-center {
-  text-align: center;
-  text-decoration: underline;
+.dashboard-card {
+    border: solid 1px var(--base-border-color);
+    border-radius: 6px;
+    background-color: var(--card-bg-color);
 }
