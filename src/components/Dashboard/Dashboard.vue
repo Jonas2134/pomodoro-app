@@ -9,13 +9,13 @@ import DashboardActivities from "./Dashboard-activities.vue";
             <h1>Dashboard</h1>
         </header>
         <section class="dashboard__section">
-            <div class="div1 dashboard-card">1</div>
-            <div class="div2 dashboard-card">2</div>
-            <div class="div3 dashboard-card">3</div>
-            <div class="div4 dashboard-card">4</div>
+            <div class="div1 dashboard-card">Focus Time</div>
+            <div class="div2 dashboard-card">All Sessions</div>
+            <div class="div3 dashboard-card">Open Tasks</div>
+            <div class="div4 dashboard-card">This Week</div>
             <dashboard-calandar />
             <dashboard-activities />
-            <div class="div7 dashboard-card">7</div>
+            <div class="div7 dashboard-card">Last Session</div>
         </section>
     </div>
 </template>
